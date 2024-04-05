@@ -2,8 +2,8 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <title>MTH308 Mathematical Models of Solids and Fluids</title>
-<!--Generated on Thu Apr  4 21:34:25 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
-<!--Document created on April 4, 2024.-->
+<!--Generated on Fri Apr  5 13:52:23 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on April 5, 2024.-->
 
 <link rel="stylesheet" href="LaTeXML.css" type="text/css">
 <link rel="stylesheet" href="ltx-article.css" type="text/css">
@@ -20,7 +20,7 @@
 <span class="ltx_personname">kldoudou
 </span></span>
 </div>
-<div class="ltx_dates">(April 4, 2024)</div>
+<div class="ltx_dates">(April 5, 2024)</div>
 
 <div class="ltx_pagination ltx_role_newpage"></div>
 <nav class="ltx_TOC ltx_list_toc ltx_toc_toc"><h6 class="ltx_title ltx_title_contents">Contents</h6>
@@ -86,8 +86,10 @@
 <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S6.SS4" title="In 6 Stresses ‣ MTH308 Mathematical Models of Solids and Fluids" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6.4 </span>2D Cauchy’s Formula</span></a></li>
 <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S6.SS5" title="In 6 Stresses ‣ MTH308 Mathematical Models of Solids and Fluids" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6.5 </span>3D Cauchy Stress Tensor</span></a></li>
 <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S6.SS6" title="In 6 Stresses ‣ MTH308 Mathematical Models of Solids and Fluids" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6.6 </span>Notion of Stress Components</span></a></li>
-<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S6.SS7" title="In 6 Stresses ‣ MTH308 Mathematical Models of Solids and Fluids" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6.7 </span>Principle Values of Stress</span></a></li>
-<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S6.SS8" title="In 6 Stresses ‣ MTH308 Mathematical Models of Solids and Fluids" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6.8 </span>Stress Transformation Relations</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S6.SS7" title="In 6 Stresses ‣ MTH308 Mathematical Models of Solids and Fluids" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6.7 </span>Normal stress and Shear stress</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S6.SS8" title="In 6 Stresses ‣ MTH308 Mathematical Models of Solids and Fluids" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6.8 </span>Remark</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S6.SS9" title="In 6 Stresses ‣ MTH308 Mathematical Models of Solids and Fluids" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6.9 </span>Stress Transformation Relations</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S6.SS10" title="In 6 Stresses ‣ MTH308 Mathematical Models of Solids and Fluids" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6.10 </span>Principle Values of Stress</span></a></li>
 </ol>
 </li>
 <li class="ltx_tocentry ltx_tocentry_section"><a href="#S7" title="In MTH308 Mathematical Models of Solids and Fluids" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7 </span>Appendix</span></a></li>
@@ -2671,7 +2673,7 @@ n_{3}\end{bmatrix}" display="block"><mrow><mrow><mo>[</mo><mtable displaystyle="
 <span class="ltx_tag ltx_tag_subsection">6.6 </span>Notion of Stress Components</h3>
 
 <div id="S6.SS6.p1" class="ltx_para">
-<p class="ltx_p">The first subscript denotes the plane on which it is acting, and the second subscript denotes the direction of the stress component:</p>
+<p class="ltx_p">The first subscript denotes the plane on which it is acting, and the second subscript denotes the direction of the stress component in figure <a href="#S6.F21" title="Figure 21 ‣ 6.6 Notion of Stress Components ‣ 6 Stresses ‣ MTH308 Mathematical Models of Solids and Fluids" class="ltx_ref"><span class="ltx_text ltx_ref_tag">21</span></a>:</p>
 </div>
 <figure id="S6.F21" class="ltx_figure">
 <div class="ltx_flex_figure">
@@ -2683,43 +2685,85 @@ n_{3}\end{bmatrix}" display="block"><mrow><mrow><mo>[</mo><mtable displaystyle="
 </section>
 <section id="S6.SS7" class="ltx_subsection">
 <h3 class="ltx_title ltx_title_subsection">
-<span class="ltx_tag ltx_tag_subsection">6.7 </span>Principle Values of Stress</h3>
+<span class="ltx_tag ltx_tag_subsection">6.7 </span>Normal stress and Shear stress</h3>
 
 <div id="S6.SS7.p1" class="ltx_para">
-<p class="ltx_p">For a given state of stress, the determination of maximum normal stresses and shear stresses at a point is of considerable interest in the design of structures because failures occur when the magnitudes of stresses exceed the allowable (normal or shear) stress values, called strengths, of the material. In this regard it is of interest to determine the values and the planes on which the stresses are the maximum. Thus, we must determine the eigenvalues and eigenvectors associated with the stress tensor. This amounts to finding the plane on which <math id="S6.SS7.p1.m1" class="ltx_Math" alttext="\mathbf{t}_{n}" display="inline"><msub><mi>𝐭</mi><mi>n</mi></msub></math> is largest <math id="S6.SS7.p1.m2" class="ltx_Math" alttext="\lambda\mathbf{n}" display="inline"><mrow><mi>λ</mi><mo>⁢</mo><mi>𝐧</mi></mrow></math>. It turns out there are three such planes on which the normal stress is the largest:</p>
-<table id="S6.E1" class="ltx_equation ltx_eqn_table">
+<p class="ltx_p">We note that for each stress component <math id="S6.SS7.p1.m1" class="ltx_Math" alttext="\sigma_{ij}" display="inline"><msub><mi>σ</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub></math> , the first index i indicates the plane on which the stress component acts and the second index indicates the direction of the component; e.g., <math id="S6.SS7.p1.m2" class="ltx_Math" alttext="\sigma_{12}" display="inline"><msub><mi>σ</mi><mn>12</mn></msub></math> is the stress component acting on the plane whose outward normal is in the direction of <math id="S6.SS7.p1.m3" class="ltx_Math" alttext="\mathbf{e}_{1}" display="inline"><msub><mi>𝐞</mi><mn>1</mn></msub></math> in the direction of <math id="S6.SS7.p1.m4" class="ltx_Math" alttext="\mathbf{e}_{2}" display="inline"><msub><mi>𝐞</mi><mn>2</mn></msub></math>.</p>
+</div>
+<div id="S6.SS7.p2" class="ltx_para">
+<p class="ltx_p">The positive normal stresses are also known as <span class="ltx_text ltx_font_bold">tensile stresses</span>, and negative normal stresses are known as <span class="ltx_text ltx_font_bold">compressive stresses</span>. Tangential stresses are also known as shearing stresses. For example, both <math id="S6.SS7.p2.m1" class="ltx_Math" alttext="\sigma_{12}" display="inline"><msub><mi>σ</mi><mn>12</mn></msub></math> and <math id="S6.SS7.p2.m2" class="ltx_Math" alttext="\sigma_{13}" display="inline"><msub><mi>σ</mi><mn>13</mn></msub></math> are shearing stress components acting on the same plane (the <math id="S6.SS7.p2.m3" class="ltx_Math" alttext="\mathbf{e}_{1}" display="inline"><msub><mi>𝐞</mi><mn>1</mn></msub></math>-plane).</p>
+</div>
+<div id="S6.SS7.p3" class="ltx_para">
+<p class="ltx_p">Thus, the resultant shearing stress on this plane is given by</p>
+<table id="S6.Ex19" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="S6.E1.m1" class="ltx_Math" alttext="\mathbf{t}=\mathbf{\sigma}^{T}\cdot\mathbf{n}\text{ or }(\mathbf{\sigma}^{T}-%
-\lambda\mathbf{I})\mathbf{n}=0." display="block"><mrow><mrow><mi>𝐭</mi><mo>=</mo><mrow><mrow><msup><mi>σ</mi><mi>T</mi></msup><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>𝐧</mi></mrow><mo>⁢</mo><mtext> or </mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>σ</mi><mi>T</mi></msup><mo>−</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>𝐈</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>𝐧</mi></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S6.Ex19.m1" class="ltx_Math" alttext="\mathbf{t}_{1s}=\sigma_{12}\mathbf{e}_{2}+\sigma_{13}\mathbf{e}_{3}." display="block"><mrow><mrow><msub><mi>𝐭</mi><mrow><mn>1</mn><mo>⁢</mo><mi>s</mi></mrow></msub><mo>=</mo><mrow><mrow><msub><mi>σ</mi><mn>12</mn></msub><mo>⁢</mo><msub><mi>𝐞</mi><mn>2</mn></msub></mrow><mo>+</mo><mrow><msub><mi>σ</mi><mn>13</mn></msub><mo>⁢</mo><msub><mi>𝐞</mi><mn>3</mn></msub></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
-<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.1)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">The magnitude of this shearing stress is given by</p>
+<table id="S6.Ex20" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S6.Ex20.m1" class="ltx_Math" alttext="t_{1s}=|\mathbf{t}_{1s}|=\sqrt{\sigma_{12}^{2}+\sigma_{13}^{2}}." display="block"><mrow><mrow><msub><mi>t</mi><mrow><mn>1</mn><mo>⁢</mo><mi>s</mi></mrow></msub><mo>=</mo><mrow><mo stretchy="false">|</mo><msub><mi>𝐭</mi><mrow><mn>1</mn><mo>⁢</mo><mi>s</mi></mrow></msub><mo stretchy="false">|</mo></mrow><mo>=</mo><msqrt><mrow><msubsup><mi>σ</mi><mn>12</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>σ</mi><mn>13</mn><mn>2</mn></msubsup></mrow></msqrt></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Similarly, on the <math id="S6.SS7.p3.m1" class="ltx_Math" alttext="\mathbf{e}_{2}" display="inline"><msub><mi>𝐞</mi><mn>2</mn></msub></math>-plane,</p>
+<table id="S6.Ex21" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S6.Ex21.m1" class="ltx_Math" alttext="\mathbf{t}_{2s}=\sigma_{21}\mathbf{e}_{1}+\sigma_{23}\mathbf{e}_{3}," display="block"><mrow><mrow><msub><mi>𝐭</mi><mrow><mn>2</mn><mo>⁢</mo><mi>s</mi></mrow></msub><mo>=</mo><mrow><mrow><msub><mi>σ</mi><mn>21</mn></msub><mo>⁢</mo><msub><mi>𝐞</mi><mn>1</mn></msub></mrow><mo>+</mo><mrow><msub><mi>σ</mi><mn>23</mn></msub><mo>⁢</mo><msub><mi>𝐞</mi><mn>3</mn></msub></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">and on the <math id="S6.SS7.p3.m2" class="ltx_Math" alttext="\mathbf{e}_{3}" display="inline"><msub><mi>𝐞</mi><mn>3</mn></msub></math>-plane,</p>
+<table id="S6.Ex22" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S6.Ex22.m1" class="ltx_Math" alttext="\mathbf{t}_{3s}=\sigma_{31}\mathbf{e}_{1}+\sigma_{32}\mathbf{e}_{2}." display="block"><mrow><mrow><msub><mi>𝐭</mi><mrow><mn>3</mn><mo>⁢</mo><mi>s</mi></mrow></msub><mo>=</mo><mrow><mrow><msub><mi>σ</mi><mn>31</mn></msub><mo>⁢</mo><msub><mi>𝐞</mi><mn>1</mn></msub></mrow><mo>+</mo><mrow><msub><mi>σ</mi><mn>32</mn></msub><mo>⁢</mo><msub><mi>𝐞</mi><mn>2</mn></msub></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 </tr></tbody>
 </table>
 </div>
 </section>
 <section id="S6.SS8" class="ltx_subsection">
 <h3 class="ltx_title ltx_title_subsection">
-<span class="ltx_tag ltx_tag_subsection">6.8 </span>Stress Transformation Relations</h3>
+<span class="ltx_tag ltx_tag_subsection">6.8 </span>Remark</h3>
 
 <div id="S6.SS8.p1" class="ltx_para">
+<p class="ltx_p">We also note that some authors use the convention <math id="S6.SS8.p1.m1" class="ltx_Math" alttext="\mathbf{t}^{(\mathbf{n})}=\mathbf{\sigma}\cdot\mathbf{n}" display="inline"><mrow><msup><mi>𝐭</mi><mrow><mo stretchy="false">(</mo><mi>𝐧</mi><mo stretchy="false">)</mo></mrow></msup><mo>=</mo><mrow><mi>σ</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>𝐧</mi></mrow></mrow></math> so that <math id="S6.SS8.p1.m2" class="ltx_Math" alttext="\mathbf{t}_{j}=\sigma_{ij}\mathbf{e}_{i}" display="inline"><mrow><msub><mi>𝐭</mi><mi>j</mi></msub><mo>=</mo><mrow><msub><mi>σ</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub><mo>⁢</mo><msub><mi>𝐞</mi><mi>i</mi></msub></mrow></mrow></math> . Under that convention, for example, <math id="S6.SS8.p1.m3" class="ltx_Math" alttext="\sigma_{12}" display="inline"><msub><mi>σ</mi><mn>12</mn></msub></math> and <math id="S6.SS8.p1.m4" class="ltx_Math" alttext="\sigma_{32}" display="inline"><msub><mi>σ</mi><mn>32</mn></msub></math> are tangential components of the stress vector on the plane whose normal is <math id="S6.SS8.p1.m5" class="ltx_Math" alttext="\mathbf{e}_{2}" display="inline"><msub><mi>𝐞</mi><mn>2</mn></msub></math>, and so on. These differences in meaning regarding the non-diagonal elements of <math id="S6.SS8.p1.m6" class="ltx_Math" alttext="\sigma" display="inline"><mi>σ</mi></math> disappear if the stress tensor is symmetric.</p>
+</div>
+<div id="S6.SS8.p2" class="ltx_para">
+<p class="ltx_p">In our course the stress tensor <math id="S6.SS8.p2.m1" class="ltx_Math" alttext="\sigma" display="inline"><mi>σ</mi></math> is generally symmetric because of the conservation of angular momentum. We will confirm this in Topic 5 Conservation Laws.</p>
+</div>
+</section>
+<section id="S6.SS9" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">6.9 </span>Stress Transformation Relations</h3>
+
+<div id="S6.SS9.p1" class="ltx_para">
 <p class="ltx_p">The transformation for stress tensor components follow the same relations as for a second-order tensor:</p>
-<table id="S6.Ex19" class="ltx_equation ltx_eqn_table">
+<table id="S6.Ex23" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="S6.Ex19.m1" class="ltx_Math" alttext="\overline{\sigma}_{ij}=\ell_{im}\ell_{jn}\sigma_{mn}\Rightarrow[\overline{%
+<td class="ltx_eqn_cell ltx_align_center"><math id="S6.Ex23.m1" class="ltx_Math" alttext="\overline{\sigma}_{ij}=\ell_{im}\ell_{jn}\sigma_{mn}\Rightarrow[\overline{%
 \sigma}]=[L][\sigma][L]^{T}" display="block"><mrow><msub><mover accent="true"><mi>σ</mi><mo>¯</mo></mover><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub><mo>=</mo><mrow><msub><mi mathvariant="normal">ℓ</mi><mrow><mi>i</mi><mo>⁢</mo><mi>m</mi></mrow></msub><mo>⁢</mo><msub><mi mathvariant="normal">ℓ</mi><mrow><mi>j</mi><mo>⁢</mo><mi>n</mi></mrow></msub><mo>⁢</mo><msub><mi>σ</mi><mrow><mi>m</mi><mo>⁢</mo><mi>n</mi></mrow></msub></mrow><mo stretchy="false">⇒</mo><mrow><mo stretchy="false">[</mo><mover accent="true"><mi>σ</mi><mo>¯</mo></mover><mo stretchy="false">]</mo></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">[</mo><mi>L</mi><mo stretchy="false">]</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>σ</mi><mo stretchy="false">]</mo></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">[</mo><mi>L</mi><mo stretchy="false">]</mo></mrow><mi>T</mi></msup></mrow></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 </tr></tbody>
 </table>
 <p class="ltx_p">For example</p>
-<table id="S6.Ex20" class="ltx_equation ltx_eqn_table">
+<table id="S6.Ex24" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="S6.Ex20.m1" class="ltx_Math" alttext="[L]=\begin{bmatrix}\cos\theta&amp;\sin\theta&amp;0\\
+<td class="ltx_eqn_cell ltx_align_center"><math id="S6.Ex24.m1" class="ltx_Math" alttext="[L]=\begin{bmatrix}\cos\theta&amp;\sin\theta&amp;0\\
 -\sin\theta&amp;\cos\theta&amp;0\\
 0&amp;0&amp;1\end{bmatrix}=\begin{bmatrix}\ell_{11}&amp;\ell_{12}&amp;0\\
 \ell_{21}&amp;\ell_{22}&amp;0\\
@@ -2750,6 +2794,201 @@ n_{3}\end{bmatrix}" display="block"><mrow><mrow><mo>[</mo><mtable displaystyle="
 </div>
 </div>
 </figure>
+</div>
+<div id="S6.SS9.p2" class="ltx_para">
+<table id="S6.Ex25" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S6.Ex25.m1" class="ltx_Math" alttext="dA_{x}=dA\cos\theta=dAn_{x},\text{ and }dA_{y}=dA\sin\theta=dAn_{y}" display="block"><mrow><mrow><mrow><mi>d</mi><mo>⁢</mo><msub><mi>A</mi><mi>x</mi></msub></mrow><mo>=</mo><mrow><mi>d</mi><mo>⁢</mo><mi>A</mi><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow><mo>=</mo><mrow><mi>d</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><msub><mi>n</mi><mi>x</mi></msub></mrow></mrow><mo>,</mo><mrow><mrow><mtext> and </mtext><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>A</mi><mi>y</mi></msub></mrow><mo>=</mo><mrow><mi>d</mi><mo>⁢</mo><mi>A</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow><mo>=</mo><mrow><mi>d</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><msub><mi>n</mi><mi>y</mi></msub></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Summing forces along the red line, we obtain</p>
+<table id="S6.Ex26" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S6.Ex26.m1" class="ltx_Math" alttext="\sigma_{nn}dA-(\sigma_{xy}dA_{x})\sin\theta-(\sigma_{yx}dA_{y})\cos\theta-(%
+\sigma_{xx}dA_{x})\cos\theta-(\sigma_{yy}dA_{y})\sin\theta=0" display="block"><mrow><mrow><mrow><msub><mi>σ</mi><mrow><mi>n</mi><mo>⁢</mo><mi>n</mi></mrow></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>A</mi></mrow><mo>−</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>σ</mi><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>A</mi><mi>x</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow><mo>−</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>σ</mi><mrow><mi>y</mi><mo>⁢</mo><mi>x</mi></mrow></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>A</mi><mi>y</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow><mo>−</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>σ</mi><mrow><mi>x</mi><mo>⁢</mo><mi>x</mi></mrow></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>A</mi><mi>x</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow><mo>−</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>σ</mi><mrow><mi>y</mi><mo>⁢</mo><mi>y</mi></mrow></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>A</mi><mi>y</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Similarly, by summing the forces along the s-direction, we obtain</p>
+<table id="S6.Ex27" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S6.Ex27.m1" class="ltx_Math" alttext="\sigma_{ns}dA+(\sigma_{xx}dA_{x})\sin\theta-(\sigma_{xy}dA_{x})\cos\theta+(%
+\sigma_{yx}dA_{y})\sin\theta-(\sigma_{yy}dA_{y})\cos\theta=0" display="block"><mrow><mrow><mrow><mrow><mrow><mrow><msub><mi>σ</mi><mrow><mi>n</mi><mo>⁢</mo><mi>s</mi></mrow></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>A</mi></mrow><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>σ</mi><mrow><mi>x</mi><mo>⁢</mo><mi>x</mi></mrow></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>A</mi><mi>x</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow><mo>−</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>σ</mi><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>A</mi><mi>x</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>σ</mi><mrow><mi>y</mi><mo>⁢</mo><mi>x</mi></mrow></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>A</mi><mi>y</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow><mo>−</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>σ</mi><mrow><mi>y</mi><mo>⁢</mo><mi>y</mi></mrow></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>A</mi><mi>y</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Substitute for <math id="S6.SS9.p2.m1" class="ltx_Math" alttext="dA_{x}=dA\cos\theta" display="inline"><mrow><mrow><mi>d</mi><mo>⁢</mo><msub><mi>A</mi><mi>x</mi></msub></mrow><mo>=</mo><mrow><mi>d</mi><mo>⁢</mo><mi>A</mi><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow></math> and <math id="S6.SS9.p2.m2" class="ltx_Math" alttext="dA_{y}=dA\sin\theta" display="inline"><mrow><mrow><mi>d</mi><mo>⁢</mo><msub><mi>A</mi><mi>y</mi></msub></mrow><mo>=</mo><mrow><mi>d</mi><mo>⁢</mo><mi>A</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow></math> into the equations and divide throughout by <math id="S6.SS9.p2.m3" class="ltx_Math" alttext="dA" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>A</mi></mrow></math>, we obtain</p>
+<table id="S6.Ex28" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S6.Ex28.m1" class="ltx_Math" alttext="\sigma_{nn}=\sigma_{xx}\cos^{2}\theta+\sigma_{yy}\sin^{2}\theta+(\sigma_{xy}+%
+\sigma_{yx})\cos\theta\sin\theta" display="block"><mrow><msub><mi>σ</mi><mrow><mi>n</mi><mo>⁢</mo><mi>n</mi></mrow></msub><mo>=</mo><mrow><mrow><msub><mi>σ</mi><mrow><mi>x</mi><mo>⁢</mo><mi>x</mi></mrow></msub><mo lspace="0.167em">⁢</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow><mo>+</mo><mrow><msub><mi>σ</mi><mrow><mi>y</mi><mo>⁢</mo><mi>y</mi></mrow></msub><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>σ</mi><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow></msub><mo>+</mo><msub><mi>σ</mi><mrow><mi>y</mi><mo>⁢</mo><mi>x</mi></mrow></msub></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<table id="S6.Ex29" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S6.Ex29.m1" class="ltx_Math" alttext="\sigma_{ns}=(\sigma_{yy}-\sigma_{xx})\cos\theta\sin\theta+\sigma_{xy}\cos^{2}%
+\theta-\sigma_{yx}\sin^{2}\theta" display="block"><mrow><msub><mi>σ</mi><mrow><mi>n</mi><mo>⁢</mo><mi>s</mi></mrow></msub><mo>=</mo><mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>σ</mi><mrow><mi>y</mi><mo>⁢</mo><mi>y</mi></mrow></msub><mo>−</mo><msub><mi>σ</mi><mrow><mi>x</mi><mo>⁢</mo><mi>x</mi></mrow></msub></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow><mo>+</mo><mrow><msub><mi>σ</mi><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow></msub><mo lspace="0.167em">⁢</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow><mo>−</mo><mrow><msub><mi>σ</mi><mrow><mi>y</mi><mo>⁢</mo><mi>x</mi></mrow></msub><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">which are the same as those derived earlier.</p>
+</div>
+</section>
+<section id="S6.SS10" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">6.10 </span>Principle Values of Stress</h3>
+
+<div id="S6.SS10.p1" class="ltx_para">
+<p class="ltx_p">For a given state of stress, the determination of maximum normal stresses and shear stresses at a point is of considerable interest in the design of structures because failures occur when the magnitudes of stresses exceed the allowable (normal or shear) stress values, called strengths, of the material. In this regard it is of interest to determine the values and the planes on which the stresses are the maximum. Thus, we must determine the eigenvalues and eigenvectors associated with the stress tensor. This amounts to finding the plane on which <math id="S6.SS10.p1.m1" class="ltx_Math" alttext="\mathbf{t}_{n}" display="inline"><msub><mi>𝐭</mi><mi>n</mi></msub></math> is largest <math id="S6.SS10.p1.m2" class="ltx_Math" alttext="\lambda\mathbf{n}" display="inline"><mrow><mi>λ</mi><mo>⁢</mo><mi>𝐧</mi></mrow></math>. It turns out there are three such planes on which the normal stress is the largest:</p>
+<table id="S6.E1" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S6.E1.m1" class="ltx_Math" alttext="\mathbf{t}=\mathbf{\sigma}^{T}\cdot\mathbf{n}\text{ or }(\mathbf{\sigma}^{T}-%
+\lambda\mathbf{I})\mathbf{n}=0." display="block"><mrow><mrow><mi>𝐭</mi><mo>=</mo><mrow><mrow><msup><mi>σ</mi><mi>T</mi></msup><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>𝐧</mi></mrow><mo>⁢</mo><mtext> or </mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>σ</mi><mi>T</mi></msup><mo>−</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>𝐈</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>𝐧</mi></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.1)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Let <math id="S6.SS10.p1.m3" class="ltx_Math" alttext="\lambda_{1}" display="inline"><msub><mi>λ</mi><mn>1</mn></msub></math>, <math id="S6.SS10.p1.m4" class="ltx_Math" alttext="\lambda_{2}" display="inline"><msub><mi>λ</mi><mn>2</mn></msub></math>, and <math id="S6.SS10.p1.m5" class="ltx_Math" alttext="\lambda_{3}" display="inline"><msub><mi>λ</mi><mn>3</mn></msub></math> denote the principal (normal) stresses and <span class="ltx_text ltx_font_bold">n</span> be an arbitrary unit normal vector. Then the stress vector is</p>
+<table id="S6.Ex30" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S6.Ex30.m1" class="ltx_Math" alttext="\mathbf{t}=\lambda_{1}\mathbf{n}_{1}+\lambda_{2}\mathbf{n}_{2}+\lambda_{3}%
+\mathbf{n}_{3}" display="block"><mrow><mi>𝐭</mi><mo>=</mo><mrow><mrow><msub><mi>λ</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>𝐧</mi><mn>1</mn></msub></mrow><mo>+</mo><mrow><msub><mi>λ</mi><mn>2</mn></msub><mo>⁢</mo><msub><mi>𝐧</mi><mn>2</mn></msub></mrow><mo>+</mo><mrow><msub><mi>λ</mi><mn>3</mn></msub><mo>⁢</mo><msub><mi>𝐧</mi><mn>3</mn></msub></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Then</p>
+<table id="S6.Ex31" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S6.Ex31.m1" class="ltx_Math" alttext="t_{nn}=t_{i}n_{i}=\lambda_{1}n_{1}^{2}+\lambda_{2}n_{2}^{2}+\lambda_{3}n_{3}^{%
+2}." display="block"><mrow><mrow><msub><mi>t</mi><mrow><mi>n</mi><mo>⁢</mo><mi>n</mi></mrow></msub><mo>=</mo><mrow><msub><mi>t</mi><mi>i</mi></msub><mo>⁢</mo><msub><mi>n</mi><mi>i</mi></msub></mrow><mo>=</mo><mrow><mrow><msub><mi>λ</mi><mn>1</mn></msub><mo>⁢</mo><msubsup><mi>n</mi><mn>1</mn><mn>2</mn></msubsup></mrow><mo>+</mo><mrow><msub><mi>λ</mi><mn>2</mn></msub><mo>⁢</mo><msubsup><mi>n</mi><mn>2</mn><mn>2</mn></msubsup></mrow><mo>+</mo><mrow><msub><mi>λ</mi><mn>3</mn></msub><mo>⁢</mo><msubsup><mi>n</mi><mn>3</mn><mn>2</mn></msubsup></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">The magnitude of the shear stress on the plane normal to <span class="ltx_text ltx_font_bold">n</span> is</p>
+<table id="S6.Ex32" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S6.Ex32.m1" class="ltx_Math" alttext="t_{ns}^{2}(\mathbf{n})=|\mathbf{t}|^{2}-t_{nn}^{2}=\lambda_{1}^{2}n_{1}^{2}+%
+\lambda_{2}^{2}n_{2}^{2}+\lambda_{3}^{2}n_{3}^{2}-(\lambda_{1}n_{1}^{2}+%
+\lambda_{2}n_{2}^{2}+\lambda_{3}n_{3}^{2})^{2}." display="block"><mrow><mrow><mrow><msubsup><mi>t</mi><mrow><mi>n</mi><mo>⁢</mo><mi>s</mi></mrow><mn>2</mn></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝐧</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mrow><mo stretchy="false">|</mo><mi>𝐭</mi><mo stretchy="false">|</mo></mrow><mn>2</mn></msup><mo>−</mo><msubsup><mi>t</mi><mrow><mi>n</mi><mo>⁢</mo><mi>n</mi></mrow><mn>2</mn></msubsup></mrow><mo>=</mo><mrow><mrow><mrow><msubsup><mi>λ</mi><mn>1</mn><mn>2</mn></msubsup><mo>⁢</mo><msubsup><mi>n</mi><mn>1</mn><mn>2</mn></msubsup></mrow><mo>+</mo><mrow><msubsup><mi>λ</mi><mn>2</mn><mn>2</mn></msubsup><mo>⁢</mo><msubsup><mi>n</mi><mn>2</mn><mn>2</mn></msubsup></mrow><mo>+</mo><mrow><msubsup><mi>λ</mi><mn>3</mn><mn>2</mn></msubsup><mo>⁢</mo><msubsup><mi>n</mi><mn>3</mn><mn>2</mn></msubsup></mrow></mrow><mo>−</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>λ</mi><mn>1</mn></msub><mo>⁢</mo><msubsup><mi>n</mi><mn>1</mn><mn>2</mn></msubsup></mrow><mo>+</mo><mrow><msub><mi>λ</mi><mn>2</mn></msub><mo>⁢</mo><msubsup><mi>n</mi><mn>2</mn><mn>2</mn></msubsup></mrow><mo>+</mo><mrow><msub><mi>λ</mi><mn>3</mn></msub><mo>⁢</mo><msubsup><mi>n</mi><mn>3</mn><mn>2</mn></msubsup></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">We wish to determine the plane <span class="ltx_text ltx_font_bold">n</span> on which <math id="S6.SS10.p1.m6" class="ltx_Math" alttext="t_{ns}" display="inline"><msub><mi>t</mi><mrow><mi>n</mi><mo>⁢</mo><mi>s</mi></mrow></msub></math> is the maximum. Thus, we seek the maximum of the function</p>
+<table id="S6.Ex33" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S6.Ex33.m1" class="ltx_Math" alttext="F(n_{1},n_{2},n_{3})=t_{ns}^{2}(n_{1},n_{2},n_{3})" display="block"><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><msub><mi>n</mi><mn>2</mn></msub><mo>,</mo><msub><mi>n</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msubsup><mi>t</mi><mrow><mi>n</mi><mo>⁢</mo><mi>s</mi></mrow><mn>2</mn></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><msub><mi>n</mi><mn>2</mn></msub><mo>,</mo><msub><mi>n</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">subject to the constraint</p>
+<table id="S6.Ex34" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S6.Ex34.m1" class="ltx_Math" alttext="n_{1}^{2}+n_{2}^{2}+n_{3}^{2}=1." display="block"><mrow><mrow><mrow><msubsup><mi>n</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>n</mi><mn>2</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>n</mi><mn>3</mn><mn>2</mn></msubsup></mrow><mo>=</mo><mn>1</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">One way to determine the extremum of a function subjected to a constraint is to use the Lagrange multiplier method, in which we seek the stationary value of the modified function</p>
+<table id="S6.Ex35" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S6.Ex35.m1" class="ltx_Math" alttext="F_{L}(n_{1},n_{2},n_{3})=t_{ns}^{2}(n_{1},n_{2},n_{3})+\lambda(n_{1}^{2}+n_{2}%
+^{2}+n_{3}^{2}-1)." display="block"><mrow><mrow><mrow><msub><mi>F</mi><mi>L</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><msub><mi>n</mi><mn>2</mn></msub><mo>,</mo><msub><mi>n</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msubsup><mi>t</mi><mrow><mi>n</mi><mo>⁢</mo><mi>s</mi></mrow><mn>2</mn></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><msub><mi>n</mi><mn>2</mn></msub><mo>,</mo><msub><mi>n</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msubsup><mi>n</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>n</mi><mn>2</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>n</mi><mn>3</mn><mn>2</mn></msubsup></mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">where <math id="S6.SS10.p1.m7" class="ltx_Math" alttext="\lambda" display="inline"><mi>λ</mi></math> is the Lagrange multiplier, which is to be determined along with <math id="S6.SS10.p1.m8" class="ltx_Math" alttext="n_{1}" display="inline"><msub><mi>n</mi><mn>1</mn></msub></math>, <math id="S6.SS10.p1.m9" class="ltx_Math" alttext="n_{2}" display="inline"><msub><mi>n</mi><mn>2</mn></msub></math>, and <math id="S6.SS10.p1.m10" class="ltx_Math" alttext="n_{3}" display="inline"><msub><mi>n</mi><mn>3</mn></msub></math>. The necessary condition for the stationary of <math id="S6.SS10.p1.m11" class="ltx_Math" alttext="F_{L}" display="inline"><msub><mi>F</mi><mi>L</mi></msub></math> is</p>
+<table id="S6.Ex36" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S6.Ex36.m1" class="ltx_Math" alttext="0=dF_{L}=\frac{\partial F_{L}}{\partial n_{1}}dn_{1}+\frac{\partial F_{L}}{%
+\partial n_{2}}dn_{2}+\frac{\partial F_{L}}{\partial n_{3}}dn_{3}+\frac{%
+\partial F_{L}}{\partial\lambda}d\lambda." display="block"><mrow><mrow><mn>0</mn><mo>=</mo><mrow><mi>d</mi><mo>⁢</mo><msub><mi>F</mi><mi>L</mi></msub></mrow><mo>=</mo><mrow><mrow><mfrac><mrow><mo rspace="0em">∂</mo><msub><mi>F</mi><mi>L</mi></msub></mrow><mrow><mo rspace="0em">∂</mo><msub><mi>n</mi><mn>1</mn></msub></mrow></mfrac><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>n</mi><mn>1</mn></msub></mrow><mo>+</mo><mrow><mfrac><mrow><mo rspace="0em">∂</mo><msub><mi>F</mi><mi>L</mi></msub></mrow><mrow><mo rspace="0em">∂</mo><msub><mi>n</mi><mn>2</mn></msub></mrow></mfrac><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>n</mi><mn>2</mn></msub></mrow><mo>+</mo><mrow><mfrac><mrow><mo rspace="0em">∂</mo><msub><mi>F</mi><mi>L</mi></msub></mrow><mrow><mo rspace="0em">∂</mo><msub><mi>n</mi><mn>3</mn></msub></mrow></mfrac><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>n</mi><mn>3</mn></msub></mrow><mo>+</mo><mrow><mfrac><mrow><mo rspace="0em">∂</mo><msub><mi>F</mi><mi>L</mi></msub></mrow><mrow><mo rspace="0em">∂</mo><mi>λ</mi></mrow></mfrac><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>λ</mi></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">We have the following two sets of solutions (not derived here)</p>
+<table id="S6.Ex37" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S6.Ex37.m1" class="ltx_Math" alttext="(n_{1},n_{2},n_{3})=(1,0,0),(0,1,0),(0,0,1)" display="block"><mrow><mrow><mo stretchy="false">(</mo><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><msub><mi>n</mi><mn>2</mn></msub><mo>,</mo><msub><mi>n</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<table id="S6.Ex38" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S6.Ex38.m1" class="ltx_Math" alttext="(n_{1},n_{2},n_{3})=(\frac{1}{\sqrt{2}},\pm\frac{1}{\sqrt{2}},0),(\frac{1}{%
+\sqrt{2}},0,\pm\frac{1}{\sqrt{2}})\text{ and }(0,\frac{1}{\sqrt{2}},\pm\frac{1%
+}{\sqrt{2}})" display="block"><mrow><mrow><mo stretchy="false">(</mo><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><msub><mi>n</mi><mn>2</mn></msub><mo>,</mo><msub><mi>n</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mfrac><mn>1</mn><msqrt><mn>2</mn></msqrt></mfrac><mo>,</mo><mrow><mo>±</mo><mfrac><mn>1</mn><msqrt><mn>2</mn></msqrt></mfrac></mrow><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mrow><mo stretchy="false">(</mo><mfrac><mn>1</mn><msqrt><mn>2</mn></msqrt></mfrac><mo>,</mo><mn>0</mn><mo>,</mo><mrow><mo>±</mo><mfrac><mn>1</mn><msqrt><mn>2</mn></msqrt></mfrac></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mtext> and </mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mfrac><mn>1</mn><msqrt><mn>2</mn></msqrt></mfrac><mo>,</mo><mrow><mo>±</mo><mfrac><mn>1</mn><msqrt><mn>2</mn></msqrt></mfrac></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">The first set of solutions corresponds to the principal planes, on which he shear stresses are the <span class="ltx_text ltx_font_bold">minimum</span>, namely, zero. The second set of solutions corresponds to the <span class="ltx_text ltx_font_bold">maximum</span> shear stress planes.</p>
+</div>
+<div id="S6.SS10.p2" class="ltx_para">
+<p class="ltx_p">The maximum shear stresses on the planes are given by</p>
+<table id="S7.EGx16" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S6.Ex39"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S6.Ex39.m1" class="ltx_Math" alttext="\displaystyle t_{ns}^{2}" display="inline"><msubsup><mi>t</mi><mrow><mi>n</mi><mo>⁢</mo><mi>s</mi></mrow><mn>2</mn></msubsup></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S6.Ex39.m2" class="ltx_Math" alttext="\displaystyle=\frac{1}{4}(\lambda_{1}-\lambda_{2})^{2}\text{ for }\mathbf{n}=(%
+\frac{1}{\sqrt{2}}(\mathbf{e}_{1}\pm\mathbf{e}_{2}))" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><msub><mi>λ</mi><mn>1</mn></msub><mo>−</mo><msub><mi>λ</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>⁢</mo><mtext> for </mtext><mo>⁢</mo><mi>𝐧</mi></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><msqrt><mn>2</mn></msqrt></mfrac></mstyle><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>𝐞</mi><mn>1</mn></msub><mo>±</mo><msub><mi>𝐞</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S6.Ex40"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S6.Ex40.m1" class="ltx_Math" alttext="\displaystyle t_{ns}^{2}" display="inline"><msubsup><mi>t</mi><mrow><mi>n</mi><mo>⁢</mo><mi>s</mi></mrow><mn>2</mn></msubsup></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S6.Ex40.m2" class="ltx_Math" alttext="\displaystyle=\frac{1}{4}(\lambda_{1}-\lambda_{3})^{2}\text{ for }\mathbf{n}=(%
+\frac{1}{\sqrt{2}}(\mathbf{e}_{1}\pm\mathbf{e}_{3}))" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><msub><mi>λ</mi><mn>1</mn></msub><mo>−</mo><msub><mi>λ</mi><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>⁢</mo><mtext> for </mtext><mo>⁢</mo><mi>𝐧</mi></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><msqrt><mn>2</mn></msqrt></mfrac></mstyle><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>𝐞</mi><mn>1</mn></msub><mo>±</mo><msub><mi>𝐞</mi><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S6.Ex41"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S6.Ex41.m1" class="ltx_Math" alttext="\displaystyle t_{ns}^{2}" display="inline"><msubsup><mi>t</mi><mrow><mi>n</mi><mo>⁢</mo><mi>s</mi></mrow><mn>2</mn></msubsup></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S6.Ex41.m2" class="ltx_Math" alttext="\displaystyle=\frac{1}{4}(\lambda_{2}-\lambda_{3})^{2}\text{ for }\mathbf{n}=(%
+\frac{1}{\sqrt{2}}(\mathbf{e}_{2}\pm\mathbf{e}_{3}))" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><msub><mi>λ</mi><mn>2</mn></msub><mo>−</mo><msub><mi>λ</mi><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>⁢</mo><mtext> for </mtext><mo>⁢</mo><mi>𝐧</mi></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><msqrt><mn>2</mn></msqrt></mfrac></mstyle><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>𝐞</mi><mn>2</mn></msub><mo>±</mo><msub><mi>𝐞</mi><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Thus, we have the largest shear stress</p>
+<table id="S6.Ex42" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S6.Ex42.m1" class="ltx_Math" alttext="(t_{ns})_{max}=\frac{1}{2}(\lambda_{max}-\lambda_{min})" display="block"><mrow><msub><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mrow><mi>n</mi><mo>⁢</mo><mi>s</mi></mrow></msub><mo stretchy="false">)</mo></mrow><mrow><mi>m</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow></msub><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>λ</mi><mrow><mi>m</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow></msub><mo>−</mo><msub><mi>λ</mi><mrow><mi>m</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>n</mi></mrow></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">where <math id="S6.SS10.p2.m1" class="ltx_Math" alttext="\lambda_{max}" display="inline"><msub><mi>λ</mi><mrow><mi>m</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow></msub></math> and <math id="S6.SS10.p2.m2" class="ltx_Math" alttext="\lambda_{min}" display="inline"><msub><mi>λ</mi><mrow><mi>m</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>n</mi></mrow></msub></math> are the maximum and minimum principal stresses, respectively. The plane of the maximum shear stress lies between the planes of the maximum and minimum principal stresses. (i.e, oriented at <math id="S6.SS10.p2.m3" class="ltx_Math" alttext="\pm 45^{\circ}" display="inline"><mrow><mo>±</mo><msup><mn>45</mn><mo>∘</mo></msup></mrow></math> to both planes).</p>
 </div>
 </section>
 </section>
@@ -2844,7 +3083,7 @@ S_{ij}A_{k}\varepsilon_{jkp}\mathbf{e}_{i}\mathbf{e}_{p}" display="block"><mrow>
 <div class="ltx_proof">
 <h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Proof.</h6>
 <div id="S7.Thmtheorem3.p2" class="ltx_para">
-<table id="S7.EGx16" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="S7.EGx17" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="S7.Ex8"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -2921,7 +3160,7 @@ j}S_{3k}=-\varepsilon_{ijk}S_{1i}S_{3j}S_{2k}" display="inline"><mrow><mrow><mo>
 <h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Proof.</h6>
 <div id="S7.Thmtheorem4.p2" class="ltx_para">
 <p class="ltx_p">Let <math id="S7.Thmtheorem4.p2.m1" class="ltx_Math" alttext="\mathbf{A}=A_{i}\mathbf{e}_{i}" display="inline"><mrow><mi>𝐀</mi><mo>=</mo><mrow><msub><mi>A</mi><mi>i</mi></msub><mo>⁢</mo><msub><mi>𝐞</mi><mi>i</mi></msub></mrow></mrow></math>, <math id="S7.Thmtheorem4.p2.m2" class="ltx_Math" alttext="\mathbf{B}=B_{j}\mathbf{e}_{j}" display="inline"><mrow><mi>𝐁</mi><mo>=</mo><mrow><msub><mi>B</mi><mi>j</mi></msub><mo>⁢</mo><msub><mi>𝐞</mi><mi>j</mi></msub></mrow></mrow></math> and <math id="S7.Thmtheorem4.p2.m3" class="ltx_Math" alttext="\mathbf{C}=C_{k}\mathbf{e}_{k}" display="inline"><mrow><mi>𝐂</mi><mo>=</mo><mrow><msub><mi>C</mi><mi>k</mi></msub><mo>⁢</mo><msub><mi>𝐞</mi><mi>k</mi></msub></mrow></mrow></math>. Then</p>
-<table id="S7.EGx17" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="S7.EGx18" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="S7.Ex16"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -2984,7 +3223,7 @@ A_{k}\mathbf{e}_{i}(\mathbf{e}_{l}\cdot\mathbf{e}_{k})=S_{il}A_{l}\mathbf{e}_{i}
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 </tr></tbody>
 </table>
-<table id="S7.EGx18" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="S7.EGx19" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="S7.Ex22"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -3008,7 +3247,7 @@ A_{k}\mathbf{e}_{i}(\mathbf{e}_{l}\cdot\mathbf{e}_{k})=S_{il}A_{l}\mathbf{e}_{i}
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 </tr></tbody>
 </table>
-<table id="S7.EGx19" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="S7.EGx20" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="S7.Ex26"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -3031,7 +3270,7 @@ A_{k}\mathbf{e}_{i}(\mathbf{e}_{l}\cdot\mathbf{e}_{k})=S_{il}A_{l}\mathbf{e}_{i}
 </tr></tbody>
 </table>
 <p class="ltx_p">Then</p>
-<table id="S7.EGx20" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="S7.EGx21" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="S7.Ex30"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -3190,7 +3429,7 @@ _{j}C_{k}\varepsilon_{ijk}}" display="inline"><mrow><mi></mi><mo>=</mo><mstyle d
 </article>
 </div>
 <footer class="ltx_page_footer">
-<div class="ltx_page_logo">Generated  on Thu Apr  4 21:34:25 2024 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
+<div class="ltx_page_logo">Generated  on Fri Apr  5 13:52:23 2024 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
 </div></footer>
 </div>
 </body>
