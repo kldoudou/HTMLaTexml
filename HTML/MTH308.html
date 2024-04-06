@@ -2,8 +2,8 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <title>MTH308 Mathematical Models of Solids and Fluids</title>
-<!--Generated on Fri Apr  5 13:52:23 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
-<!--Document created on April 5, 2024.-->
+<!--Generated on Sat Apr  6 14:38:57 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on April 6, 2024.-->
 
 <link rel="stylesheet" href="LaTeXML.css" type="text/css">
 <link rel="stylesheet" href="ltx-article.css" type="text/css">
@@ -20,7 +20,7 @@
 <span class="ltx_personname">kldoudou
 </span></span>
 </div>
-<div class="ltx_dates">(April 5, 2024)</div>
+<div class="ltx_dates">(April 6, 2024)</div>
 
 <div class="ltx_pagination ltx_role_newpage"></div>
 <nav class="ltx_TOC ltx_list_toc ltx_toc_toc"><h6 class="ltx_title ltx_title_contents">Contents</h6>
@@ -90,6 +90,8 @@
 <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S6.SS8" title="In 6 Stresses ‣ MTH308 Mathematical Models of Solids and Fluids" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6.8 </span>Remark</span></a></li>
 <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S6.SS9" title="In 6 Stresses ‣ MTH308 Mathematical Models of Solids and Fluids" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6.9 </span>Stress Transformation Relations</span></a></li>
 <li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S6.SS10" title="In 6 Stresses ‣ MTH308 Mathematical Models of Solids and Fluids" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6.10 </span>Principle Values of Stress</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S6.SS11" title="In 6 Stresses ‣ MTH308 Mathematical Models of Solids and Fluids" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6.11 </span>Piola-kirchhoff Stress Tensor <span class="ltx_text ltx_font_bold">P</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S6.SS12" title="In 6 Stresses ‣ MTH308 Mathematical Models of Solids and Fluids" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6.12 </span>Second Piola-Kirchhoff Stress Tensor <span class="ltx_text ltx_font_bold">S</span></span></a></li>
 </ol>
 </li>
 <li class="ltx_tocentry ltx_tocentry_section"><a href="#S7" title="In MTH308 Mathematical Models of Solids and Fluids" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7 </span>Appendix</span></a></li>
@@ -1632,7 +1634,8 @@ _{2})dx_{1}dx_{2}=d\mathbf{x}_{1}\times d\mathbf{x}_{2}." display="block"><mrow>
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="S4.Ex33.m1" class="ltx_Math" alttext="\mathbf{n}da=J\mathbf{F}^{-T}\cdot\mathbf{N}dA." display="block"><mrow><mrow><mrow><mi>𝐧</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>a</mi></mrow><mo>=</mo><mrow><mrow><mrow><mi>J</mi><mo>⁢</mo><msup><mi>𝐅</mi><mrow><mo>−</mo><mi>T</mi></mrow></msup></mrow><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>𝐍</mi></mrow><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>A</mi></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.Ex33.m1" class="ltx_Math" alttext="d\mathbf{a}=\mathbf{n}da=J\mathbf{F}^{-T}\cdot\mathbf{N}dA=Jd\mathbf{A}\cdot%
+\mathbf{F}^{-1}." display="block"><mrow><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>𝐚</mi></mrow><mo>=</mo><mrow><mi>𝐧</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>a</mi></mrow><mo>=</mo><mrow><mrow><mrow><mi>J</mi><mo>⁢</mo><msup><mi>𝐅</mi><mrow><mo>−</mo><mi>T</mi></mrow></msup></mrow><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>𝐍</mi></mrow><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>A</mi></mrow><mo>=</mo><mrow><mrow><mi>J</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>𝐀</mi></mrow><mo lspace="0.222em" rspace="0.222em">⋅</mo><msup><mi>𝐅</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 </tr></tbody>
 </table>
@@ -2988,7 +2991,136 @@ n_{3}\end{bmatrix}" display="block"><mrow><mrow><mo>[</mo><mtable displaystyle="
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 </tr></tbody>
 </table>
-<p class="ltx_p">where <math id="S6.SS10.p2.m1" class="ltx_Math" alttext="\lambda_{max}" display="inline"><msub><mi>λ</mi><mrow><mi>m</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow></msub></math> and <math id="S6.SS10.p2.m2" class="ltx_Math" alttext="\lambda_{min}" display="inline"><msub><mi>λ</mi><mrow><mi>m</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>n</mi></mrow></msub></math> are the maximum and minimum principal stresses, respectively. The plane of the maximum shear stress lies between the planes of the maximum and minimum principal stresses. (i.e, oriented at <math id="S6.SS10.p2.m3" class="ltx_Math" alttext="\pm 45^{\circ}" display="inline"><mrow><mo>±</mo><msup><mn>45</mn><mo>∘</mo></msup></mrow></math> to both planes).</p>
+<p class="ltx_p">where <math id="S6.SS10.p2.m1" class="ltx_Math" alttext="\lambda_{max}" display="inline"><msub><mi>λ</mi><mrow><mi>m</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow></msub></math> and <math id="S6.SS10.p2.m2" class="ltx_Math" alttext="\lambda_{min}" display="inline"><msub><mi>λ</mi><mrow><mi>m</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>n</mi></mrow></msub></math> are the maximum and minimum principal stresses, respectively. The plane of the maximum shear stress lies between the planes of the maximum and minimum principal stresses. (i.e, oriented at <math id="S6.SS10.p2.m3" class="ltx_Math" alttext="\pm 45^{\circ}" display="inline"><mrow><mo>±</mo><msup><mn>45</mn><mo>∘</mo></msup></mrow></math> to both planes).
+From above, we have stress vector <math id="S6.SS10.p2.m4" class="ltx_Math" alttext="\mathbf{t}(\mathbf{n})=\frac{d\mathbf{f}}{da}" display="inline"><mrow><mrow><mi>𝐭</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝐧</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>𝐟</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>a</mi></mrow></mfrac></mrow></math>, and Cauchy stress tensor <math id="S6.SS10.p2.m5" class="ltx_Math" alttext="\mathbf{\sigma}" display="inline"><mi>σ</mi></math>. Then we have</p>
+<table id="S6.Ex43" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S6.Ex43.m1" class="ltx_Math" alttext="d\mathbf{f}=\mathbf{t}da=\mathbf{n}\cdot\mathbf{\sigma}da=d\mathbf{a}\cdot%
+\mathbf{\sigma},\text{ where }d\mathbf{a}=da\mathbf{n}" display="block"><mrow><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>𝐟</mi></mrow><mo>=</mo><mrow><mi>𝐭</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>a</mi></mrow><mo>=</mo><mrow><mrow><mi>𝐧</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>σ</mi></mrow><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>a</mi></mrow><mo>=</mo><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>𝐚</mi></mrow><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>σ</mi></mrow></mrow><mo>,</mo><mrow><mrow><mtext> where </mtext><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>𝐚</mi></mrow><mo>=</mo><mrow><mi>d</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>𝐧</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<figure id="S6.SS10.fig1" class="ltx_figure"><img src="Pictures/two_state_configuration.jpg" id="S6.SS10.g1" class="ltx_graphics ltx_img_landscape" width="299" height="162" alt="[Uncaptioned image]">
+</figure>
+</section>
+<section id="S6.SS11" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">6.11 </span>Piola-kirchhoff Stress Tensor <span class="ltx_text ltx_font_bold">P</span>
+</h3>
+
+<div id="S6.SS11.p1" class="ltx_para">
+<p class="ltx_p">Cauchy stress tensor based on the differential area at the current position. Stress tensors based on the undeformed area can also be defined. They are known as the first and second Piola-Kirchhoff stress tensors.</p>
+</div>
+<figure id="S6.F25" class="ltx_figure"><img src="Pictures/first_piola_kirchhoff_stress_tensor.jpg" id="S6.F25.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="299" height="96" alt="Refer to caption">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure"><span class="ltx_text" style="font-size:90%;">Figure 25</span>: </span><span class="ltx_text" style="font-size:90%;">First Piola-Kirchhoff Stress Tensor</span></figcaption>
+</figure>
+<div id="S6.SS11.p2" class="ltx_para">
+<p class="ltx_p">We can see that</p>
+<table id="S7.EGx17" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S6.Ex44"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S6.Ex44.m1" class="ltx_Math" alttext="\displaystyle d\mathbf{f}" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>𝐟</mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S6.Ex44.m2" class="ltx_Math" alttext="\displaystyle=\mathbf{T}dA=\mathbf{N}\cdot\mathbf{P}dA=d\mathbf{A}\cdot\mathbf%
+{P}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>𝐓</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>A</mi></mrow><mo>=</mo><mrow><mrow><mi>𝐍</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>𝐏</mi></mrow><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>A</mi></mrow><mo>=</mo><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>𝐀</mi></mrow><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>𝐏</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S6.Ex45"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S6.Ex45.m1" class="ltx_Math" alttext="\displaystyle d\mathbf{f}" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>𝐟</mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S6.Ex45.m2" class="ltx_Math" alttext="\displaystyle=\mathbf{t}da=\mathbf{n}\cdot\mathbf{\sigma}da=d\mathbf{a}\cdot%
+\mathbf{\sigma}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>𝐭</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>a</mi></mrow><mo>=</mo><mrow><mrow><mi>𝐧</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>σ</mi></mrow><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>a</mi></mrow><mo>=</mo><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>𝐚</mi></mrow><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>σ</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Then</p>
+<table id="S6.Ex46" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S6.Ex46.m1" class="ltx_Math" alttext="d\mathbf{A}\cdot\mathbf{P}=d\mathbf{f}=d\mathbf{a}\cdot\mathbf{\sigma}" display="block"><mrow><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>𝐀</mi></mrow><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>𝐏</mi></mrow><mo>=</mo><mrow><mi>d</mi><mo>⁢</mo><mi>𝐟</mi></mrow><mo>=</mo><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>𝐚</mi></mrow><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>σ</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">By theorem <a href="#S4.Thmtheorem3" title="Theorem 4.3 (Nanson’s formula) ‣ 4.10 Surface Change ‣ 4 Kinematics ‣ MTH308 Mathematical Models of Solids and Fluids" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.3</span></a>, we have</p>
+<table id="S6.Ex47" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S6.Ex47.m1" class="ltx_Math" alttext="d\mathbf{A}\cdot\mathbf{P}=d\mathbf{a}\cdot\mathbf{\sigma}=Jd\mathbf{A}\mathbf%
+{F}^{-1}\cdot\mathbf{\sigma}" display="block"><mrow><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>𝐀</mi></mrow><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>𝐏</mi></mrow><mo>=</mo><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>𝐚</mi></mrow><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>σ</mi></mrow><mo>=</mo><mrow><mrow><mi>J</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msup><mi>𝐀𝐅</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>σ</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Which means</p>
+<table id="S6.Ex48" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S6.Ex48.m1" class="ltx_Math" alttext="\mathbf{P}=J\mathbf{F}^{-1}\cdot\mathbf{\sigma}" display="block"><mrow><mi>𝐏</mi><mo>=</mo><mrow><mrow><mi>J</mi><mo>⁢</mo><msup><mi>𝐅</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>σ</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</section>
+<section id="S6.SS12" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">6.12 </span>Second Piola-Kirchhoff Stress Tensor <span class="ltx_text ltx_font_bold">S</span>
+</h3>
+
+<figure id="S6.F26" class="ltx_figure"><img src="Pictures/second_piola_kirchhoff_stress_tensor.jpg" id="S6.F26.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="299" height="95" alt="Refer to caption">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure"><span class="ltx_text" style="font-size:90%;">Figure 26</span>: </span><span class="ltx_text" style="font-size:90%;">Second Piola-Kirchhoff Stress Tensor</span></figcaption>
+</figure>
+<div id="S6.SS12.p1" class="ltx_para">
+<p class="ltx_p">We can see that</p>
+<table id="S7.EGx18" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S6.Ex49"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S6.Ex49.m1" class="ltx_Math" alttext="\displaystyle d\mathbf{\mathfrak{J}}" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>𝔍</mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S6.Ex49.m2" class="ltx_Math" alttext="\displaystyle=d\mathbf{A}\cdot\mathbf{S}=\mathbf{F}^{-1}\cdot d\mathbf{f}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>𝐀</mi></mrow><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>𝐒</mi></mrow><mo>=</mo><mrow><mrow><msup><mi>𝐅</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>d</mi></mrow><mo>⁢</mo><mi>𝐟</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="S6.Ex50"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S6.Ex50.m1" class="ltx_Math" alttext="\displaystyle d\mathbf{f}" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>𝐟</mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S6.Ex50.m2" class="ltx_Math" alttext="\displaystyle=d\mathbf{a}\cdot\mathbf{\sigma}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>𝐚</mi></mrow><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>σ</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">By theorem <a href="#S4.Thmtheorem3" title="Theorem 4.3 (Nanson’s formula) ‣ 4.10 Surface Change ‣ 4 Kinematics ‣ MTH308 Mathematical Models of Solids and Fluids" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.3</span></a> we have</p>
+<table id="S6.Ex51" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S6.Ex51.m1" class="ltx_Math" alttext="d\mathbf{A}\cdot\mathbf{S}=\mathbf{F}^{-1}\cdot(d\mathbf{a}\cdot\mathbf{\sigma%
+})=(d\mathbf{a}\cdot\mathbf{\sigma})\cdot\mathbf{F}^{-T}=Jd\mathbf{A}\mathbf{F%
+}^{-1}\cdot\mathbf{\sigma}\cdot\mathbf{F}^{-T}" display="block"><mrow><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>𝐀</mi></mrow><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>𝐒</mi></mrow><mo>=</mo><mrow><msup><mi>𝐅</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo lspace="0.222em" rspace="0.222em">⋅</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>𝐚</mi></mrow><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>σ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>𝐚</mi></mrow><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>σ</mi></mrow><mo rspace="0.055em" stretchy="false">)</mo></mrow><mo rspace="0.222em">⋅</mo><msup><mi>𝐅</mi><mrow><mo>−</mo><mi>T</mi></mrow></msup></mrow><mo>=</mo><mrow><mrow><mi>J</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msup><mi>𝐀𝐅</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>σ</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msup><mi>𝐅</mi><mrow><mo>−</mo><mi>T</mi></mrow></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Which means</p>
+<table id="S6.Ex52" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S6.Ex52.m1" class="ltx_Math" alttext="\mathbf{S}=J\mathbf{F}^{-1}\cdot\mathbf{\sigma}\cdot\mathbf{F}^{-T}=\mathbf{P}%
+\cdot\mathbf{F}^{-T}" display="block"><mrow><mi>𝐒</mi><mo>=</mo><mrow><mrow><mi>J</mi><mo>⁢</mo><msup><mi>𝐅</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>σ</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msup><mi>𝐅</mi><mrow><mo>−</mo><mi>T</mi></mrow></msup></mrow><mo>=</mo><mrow><mi>𝐏</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msup><mi>𝐅</mi><mrow><mo>−</mo><mi>T</mi></mrow></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Alternatively</p>
+<table id="S6.Ex53" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S6.Ex53.m1" class="ltx_Math" alttext="\mathbf{P}=\mathbf{S}\cdot\mathbf{F}^{T}" display="block"><mrow><mi>𝐏</mi><mo>=</mo><mrow><mi>𝐒</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msup><mi>𝐅</mi><mi>T</mi></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
 </div>
 </section>
 </section>
@@ -3083,7 +3215,7 @@ S_{ij}A_{k}\varepsilon_{jkp}\mathbf{e}_{i}\mathbf{e}_{p}" display="block"><mrow>
 <div class="ltx_proof">
 <h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Proof.</h6>
 <div id="S7.Thmtheorem3.p2" class="ltx_para">
-<table id="S7.EGx17" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="S7.EGx19" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="S7.Ex8"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -3160,7 +3292,7 @@ j}S_{3k}=-\varepsilon_{ijk}S_{1i}S_{3j}S_{2k}" display="inline"><mrow><mrow><mo>
 <h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Proof.</h6>
 <div id="S7.Thmtheorem4.p2" class="ltx_para">
 <p class="ltx_p">Let <math id="S7.Thmtheorem4.p2.m1" class="ltx_Math" alttext="\mathbf{A}=A_{i}\mathbf{e}_{i}" display="inline"><mrow><mi>𝐀</mi><mo>=</mo><mrow><msub><mi>A</mi><mi>i</mi></msub><mo>⁢</mo><msub><mi>𝐞</mi><mi>i</mi></msub></mrow></mrow></math>, <math id="S7.Thmtheorem4.p2.m2" class="ltx_Math" alttext="\mathbf{B}=B_{j}\mathbf{e}_{j}" display="inline"><mrow><mi>𝐁</mi><mo>=</mo><mrow><msub><mi>B</mi><mi>j</mi></msub><mo>⁢</mo><msub><mi>𝐞</mi><mi>j</mi></msub></mrow></mrow></math> and <math id="S7.Thmtheorem4.p2.m3" class="ltx_Math" alttext="\mathbf{C}=C_{k}\mathbf{e}_{k}" display="inline"><mrow><mi>𝐂</mi><mo>=</mo><mrow><msub><mi>C</mi><mi>k</mi></msub><mo>⁢</mo><msub><mi>𝐞</mi><mi>k</mi></msub></mrow></mrow></math>. Then</p>
-<table id="S7.EGx18" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="S7.EGx20" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="S7.Ex16"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -3223,7 +3355,7 @@ A_{k}\mathbf{e}_{i}(\mathbf{e}_{l}\cdot\mathbf{e}_{k})=S_{il}A_{l}\mathbf{e}_{i}
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 </tr></tbody>
 </table>
-<table id="S7.EGx19" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="S7.EGx21" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="S7.Ex22"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -3247,7 +3379,7 @@ A_{k}\mathbf{e}_{i}(\mathbf{e}_{l}\cdot\mathbf{e}_{k})=S_{il}A_{l}\mathbf{e}_{i}
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 </tr></tbody>
 </table>
-<table id="S7.EGx20" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="S7.EGx22" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="S7.Ex26"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -3270,7 +3402,7 @@ A_{k}\mathbf{e}_{i}(\mathbf{e}_{l}\cdot\mathbf{e}_{k})=S_{il}A_{l}\mathbf{e}_{i}
 </tr></tbody>
 </table>
 <p class="ltx_p">Then</p>
-<table id="S7.EGx21" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+<table id="S7.EGx23" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
 <tbody id="S7.Ex30"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
@@ -3429,7 +3561,7 @@ _{j}C_{k}\varepsilon_{ijk}}" display="inline"><mrow><mi></mi><mo>=</mo><mstyle d
 </article>
 </div>
 <footer class="ltx_page_footer">
-<div class="ltx_page_logo">Generated  on Fri Apr  5 13:52:23 2024 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
+<div class="ltx_page_logo">Generated  on Sat Apr  6 14:38:57 2024 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
 </div></footer>
 </div>
 </body>
